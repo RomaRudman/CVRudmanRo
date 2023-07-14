@@ -212,22 +212,27 @@ p
     background-color: gray;
     width: 100%;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 414px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: 1fr; /* Сделать структуру одноколоночной на маленьких экранах */
+        min-height: auto; /* Убрать минимальную высоту для более гибкой структуры */
+    }
 
-  .container {
-    margin: 10px;
-  }
+    .profileText .imgBx {
+        width: 80px;
+        height: 80px;
+    }
 
-  .profileText .imgBx {
-    width: 80px;
-    height: 80px;
-  }
+    .profileText h2 {
+        font-size: 1em;
+    }
 
-  .profileText h2 {
-    font-size: 1em;
-  }
+    .right_Side, .left_Side {
+        padding: 10px;
+    }
 
-  .right_Side, .left_Side {
-    padding: 10px;
-  }
+    .skills .box {
+        grid-template-columns: 1fr; /* Перевести на одноколоночный вид на маленьких экранах */
+    }
 }
